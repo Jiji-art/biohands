@@ -1,3 +1,10 @@
+<script>
+  var mdp = prompt("Ce site est protégé. Entrez le mot de passe :");
+  if (mdp !== "شعر") { 
+    document.write("Accès refusé.");
+    throw new Error("Mot de passe incorrect");
+  }
+</script>
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
@@ -819,3 +826,4 @@
   </script>
 </body>
 </html>
+
