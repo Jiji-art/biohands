@@ -1,7 +1,14 @@
 <script>
+  // 123/123
   var mdp = prompt("Ce site est protégé. Entrez le mot de passe :");
-  if (mdp !== "شعر") { 
-    document.write("Accès refusé.");
+
+  // Vérification
+  if (mdp !== "1234") { 
+    // Supprime tout le contenu de la page
+    document.body.innerHTML = "";
+    // Affiche un message
+    document.write("<h1>Accès refusé</h1><p>Mot de passe incorrect.</p>");
+    // Empêche toute autre exécution
     throw new Error("Mot de passe incorrect");
   }
 </script>
@@ -826,4 +833,5 @@
   </script>
 </body>
 </html>
+
 
